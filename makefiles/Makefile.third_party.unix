@@ -106,7 +106,7 @@ dependencies/sources/gflags-$(GFLAGS_TAG)/Makefile: dependencies/sources/gflags-
 	         -D GFLAGS_NAMESPACE=google \
 	         .
 
-dependencies/sources/gflags-$(GFLAGS-TAG)/INSTALL.txt:
+dependencies/sources/gflags-$(GFLAGS-TAG)/INSTALL.txt: dependencies/archives/gflags-$(GFLAGS_TAG).tar.gz
 	cd dependencies/sources && tar xvzmf ../archives/gflags-$(GFLAGS_TAG).tar.gz
 
 dependencies/archives/gflags-$(GFLAGS_TAG).tar.gz:
